@@ -45,13 +45,13 @@ export default function ArtistListPage() {
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {filteredArtists.map((artist) => (
             <ArtistCard
-              key={artist.id}
-              name={artist.name}
-              category={artist.category}
-              location={artist.location}
-              feeRange={artist.feeRange}
-              image={artist.image}
-            />
+  name={artist.name}
+  category={Array.isArray(artist.category) ? artist.category.join(', ') : artist.category}
+  location={artist.location}
+  feeRange={artist.feeRange}
+  image={artist.image}
+/>
+
           ))}
         </div>
 
