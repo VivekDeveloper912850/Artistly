@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "name": "Neha Kakkar",
+    "category":["Singer"],
+    "location": "Delhi",
+    "feeRange": "₹10,000 - ₹20,000",
+    "languages": ["Hindi"],
+    "image": "../artists-image/neha-image.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Raghav Juyal",
+    "category": ["Dancer"],
+    "location": "Mumbai",
+    "feeRange": "₹15,000 - ₹25,000",
+    "languages": ["Hindi"],
+    "image": "../artists-image/raghav-imag.jpeg"
+  },
+  {
+    "id": "3",
+    "name": "Sandeep Maheshwari",
+    "category": ["Speaker"],
+    "location": "Lucknow",
+    "feeRange": "₹5,000 - ₹15,000",
+    "languages": ["Hindi", "English"],
+    "image": "../artists-image/sandeep-image.jpeg"
+  },
+
+  {
+    "id": "4",
+    "name": "Dimtri Vegas",
+    "category": ["DJs"],
+    "location": "America",
+    "feeRange": "₹20001+",
+    "languages": ["English"],
+    "image": "../artists-image/dimtri-vagas.jpg"
+  }
+]

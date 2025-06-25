@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Artistly.com – Performing Artist Booking Platform (Frontend Demo)
 
-## Getting Started
+**Artistly.com** is a fictional performing artist booking platform built for learning and demo purposes. It allows **Event Planners** to discover artists and **Artist Managers** to onboard and manage artist details.
 
-First, run the development server:
+This project is a functional and responsive 3-4 page **frontend-only demo** built with **Next.js (App Router)**, **React**, and **Tailwind CSS**. It uses `localStorage` to simulate basic data persistence.
 
-```bash
+---
+
+##  Features
+
+- ✅ **Homepage** with artist categories
+- ✅ **Artist Listing Page** with filters (Category, Location, Price)
+- ✅ **Artist Onboarding Form** with validation (React Hook Form + Yup)
+- ✅ **Manager Dashboard** to view submitted artists
+- ✅ Fully responsive for **mobile and desktop**
+- ✅ Hosted on [Vercel](https://vercel.com)
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js (v13+ App Router)**
+- **React Functional Components**
+- **Tailwind CSS** (Utility-first styling)
+- **ShadCN UI** (optional use)
+- **React Hook Form + Yup** (form handling & validation)
+- **LocalStorage** (temporary data storage)
+
+---
+
+## 📦 Folder Structure
+
+/app
+├── page.tsx # Homepage
+├── onboard/page.tsx # Artist onboarding form
+├── listing/page.tsx # Artist listing with filters
+├── dashboard/page.tsx # Manager dashboard
+/components
+├── Header.tsx
+├── Footer.tsx
+└── ArtistCard.tsx
+/data
+└── artists.json # Dummy artist data (optional)
+/styles
+└── globals.css
+
+yaml
+Copy
+Edit
+
+---
+
+
+
+## ▶️ Run Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/artistly.git
+   cd artistly
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Run the dev server
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧠 Future Improvements
+Here are a few things that can be improved in the future:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ Authentication system for managers and event planners
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ Real database integration (e.g., Firebase, MongoDB, Supabase)
 
-## Learn More
+ Image upload to cloud storage (Cloudinary or Firebase)
 
-To learn more about Next.js, take a look at the following resources:
+ Booking request flow (Event planner to manager)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ Progressive Web App (PWA) support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ Pagination and search on listing page
 
-## Deploy on Vercel
+ Dark mode toggle using useContext
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ Charts and insights on dashboard (e.g., top categories)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ Reusable component library setup using ShadCN or Radix UI
